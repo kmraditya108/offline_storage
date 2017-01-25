@@ -1,0 +1,11 @@
+<ion-view view-title="Home Page" ng-init="homeInit()">
+	<ion-content>
+		<center><h3>Database Record</h3></center>
+		<div class="card">
+			<div class="item item-text-wrap" ng-repeat="data in dbData">
+				Name : {{data.username}}<br>
+				Password : {{data.password}}
+			</div>
+		</div>
+	</ion-content>
+</ion-view>
